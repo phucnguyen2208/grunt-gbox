@@ -1,0 +1,50 @@
+
+
+.about-us {
+    background: url('../img/about-bg.png') no-repeat center center;
+    background-size: cover;
+    color: $white-cl;
+    padding: 100px 0 80px;
+    h2 {
+        text-transform: uppercase;
+        font-size: 36px;
+        color: $yellow-cl;
+        line-height: 56px;
+        letter-spacing: 20px;
+    }
+    p {
+        font-size: 18px;
+        width: 880px;
+        max-width: 100%;
+    }
+    .about-text {
+        line-height: 40px;
+        margin: 30px 0;
+    }
+    .book-now {
+        display: flex;
+        p {
+            margin-left: 15px;
+            font-size: 18px;
+        }
+        .book {
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+    }
+
+
+
+    @include tablet {
+		
+	}
+	@include mobile {
+        br {
+            display: none;
+        }
+    }
+	@include mobile-xxs {
+
+    }
+}

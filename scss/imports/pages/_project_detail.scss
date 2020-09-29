@@ -1,0 +1,67 @@
+
+.projectdt {
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .back {
+            align-items: center;
+            display: flex;
+            span {
+                margin-right: 30px;
+                font-size: 12px;
+            }
+            img {
+                height: 12px;
+            }
+        }
+        h2 {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    &__img {
+        margin: 30px 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        p {
+            line-height: 22px;
+            font-size: 12px;
+        }
+    }
+
+
+    @include tablet {
+		
+	}
+	@include mobile {
+        &__title {
+            margin-top: 30px;
+        }
+        &__content {
+            .row {
+                display: flex;
+                flex-direction: column-reverse;   
+                .col-md-3, .col-md-6 {
+                    h3 {
+                        padding-top: 20px;
+                    }
+                    br {
+                        display: none;
+                    }
+                } 
+            }
+        }
+    }
+	@include mobile-xxs {}
+}

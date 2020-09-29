@@ -1,0 +1,156 @@
+a {
+    text-decoration: none;
+    display: block;
+    color: $black-cl;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 15px auto 0;
+    background: $black-cl;
+}
+
+
+body {
+    font-family: "PB";
+    // background: black;
+}
+
+
+.text-tr {
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+
+.mtn {
+    margin-top: 0 !important;
+    padding-top: 50px !important;
+}
+
+
+.mgb30 {
+    margin: 40px 0 !important;
+}
+
+.mg {
+    margin: 40px 0 20px !important;
+}
+
+
+.about {
+    font-size: 12px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    .line {
+        margin-bottom: 50px;
+    }
+    p {
+        line-height: 30px;
+        letter-spacing: 1.2px;
+    }
+    
+
+    @include tablet {
+		
+	}
+	@include mobile {
+        text-align: center;
+        .question {
+            display: none;
+        }
+    }
+	@include mobile-xxs {}
+}
+
+
+.section-form {
+    font-size: 12px;
+    background: $yellow-cl;
+    .address {
+        padding-top: 10px;
+        p {
+            text-transform: uppercase;
+            line-height: 30px;
+            letter-spacing: 1.2px;
+        }
+    }
+    .form {
+        padding-top: 10px;
+        
+    }
+
+    @include tablet {
+		
+	}
+	@include mobile {
+        background: none;
+        text-align: center;
+        margin-bottom: 30px;
+        .form {
+            display: none;
+        }
+    }
+	@include mobile-xxs {
+
+    }
+}
+
+button {
+    font-size: 12px;
+    float: right;
+    margin-top: 15px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    background: #231f20;
+    color: $white-cl;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+
+.book {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #525355;
+    color: $yellow-cl;
+    font-weight: bold;
+    line-height: 24px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+
+@keyframes down {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+        transition: 0.3s;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 1;
+        transition: 0.3s;
+    }
+}

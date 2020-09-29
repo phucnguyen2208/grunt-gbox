@@ -1,0 +1,33 @@
+
+.footer {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background: $yellow-cl;
+    &-content {
+        text-align: center;
+        margin-top: 80px;
+        p {
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        img {
+            animation: up 2s ease both infinite ;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@keyframes up {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+        transition: 0.3s;
+    }
+    100% {
+        transform: translateY(-15px);
+        opacity: 1;
+        transition: 0.3s;
+    }
+}

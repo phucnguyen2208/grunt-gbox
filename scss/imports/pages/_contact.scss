@@ -1,0 +1,67 @@
+
+.contact {
+    font-size: 12px;
+    background: url('../img/contact-bg.png') no-repeat center center;
+    background-size: cover;
+    padding-top: 100px;
+    color: $white-cl;
+    &__img {
+        text-align: center;
+    }
+    .arrow {
+        color: $white-cl;
+        text-align: center;
+        padding-bottom: 20px;
+        img {
+            animation: down 2s ease both infinite;
+        }
+    }
+    .address {
+        text-transform: uppercase;
+        text-align: right;
+    }
+    .row {
+        margin: 50px 0 80px;
+    }
+    p {
+        text-transform: uppercase;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+    }
+
+
+    @include tablet {
+		
+	}
+	@include mobile {
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+            .col-md-6{
+                .address , .email , .phone {
+                    text-align: center;
+                }
+                
+            }
+        }
+        .arrow {
+            img {
+                visibility: hidden;
+            }
+        }
+    }
+	@include mobile-xxs {}
+}
+
+
+.mtn {
+    @include tablet {
+		
+	}
+	@include mobile {
+        .col-md-6 {
+            display: none;
+        }
+    }
+	@include mobile-xxs {}
+}

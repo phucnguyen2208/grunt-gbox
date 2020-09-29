@@ -1,0 +1,69 @@
+
+.all-work {
+    margin: 100px 0;
+    .project__list {
+        &--item {
+            .project-img {
+                overflow: hidden;
+                display: flex;
+            }
+        }
+    }
+    
+    .all-works {
+        position: relative;
+        .book-now {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            p {
+                font-size: 14px;
+                text-transform: none;
+                text-align: right;
+                margin-right: 15px;
+            }
+            .book {
+                transition: 0.5s;
+            }
+        }
+        .more {
+            img {
+                animation: down 2s ease both infinite;
+            }
+        }
+    }
+
+
+    @include tablet {
+		
+	}
+	@include mobile {
+        margin: 50px 0;
+        .project__tab {
+            display: block;
+            margin: 50px 0;
+        }
+        .all-works {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            .book-now {
+                display: block;
+                position: inherit;
+                p {
+                    text-align: center;
+                    margin: 0;
+                    padding-bottom: 10px;
+                }
+                .book-box {
+                    @include midflex;
+                }
+            }
+            .more {
+                margin-top: 40px;
+            }
+        }
+    }
+	@include mobile-xxs {}
+}

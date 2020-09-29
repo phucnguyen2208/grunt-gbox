@@ -1,0 +1,209 @@
+
+.section-rental {
+    font-size: 12px;
+    .row {
+        margin: 0;
+    }
+    .col-md-3 {
+        padding: 40px 0 0 30px;
+        background: #525355;
+        height: 650px;
+        .studio-det {
+            background: $yellow-cl;
+            padding-top: 15px;
+            width: 90px;
+            text-align: center;
+            h3 {
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            span {
+                font-size: 52px;
+                font-family: 'DIN';
+            }
+        }
+        .text {
+            color: $white-cl;
+            h2 {
+                margin: 30px 0;
+                font-size: 28px;
+                font-family: 'PEB';
+            }
+            span {
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            p {
+                margin-top: 10px;
+                line-height: 20px;
+            }
+        }
+    }
+    .col-md-7 {
+        margin-top: 40px;
+        padding-left: 50px;
+        .company-detail {
+            h2 {
+                margin-bottom: 30px;
+                font-size: 28px;
+                font-family: 'PEB';
+            }
+            .col-md-6 {
+                textarea {
+                    outline: none;
+                    width: 100%;
+                    margin-top: 27px;
+                    padding: 10px;
+                    height: 120px;
+                }
+            }
+            
+        }
+        .booking-detail {
+            margin-top: 40px;
+            h2 {
+                margin-bottom: 30px;
+                font-size: 28px;
+                font-family: 'PEB';
+            }
+            .studio-box {
+                .box {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    a {
+                        width: 50px;
+                        height: 50px;
+                        background: $text-cl;
+                        color: $white-cl;
+                        @include midflex;
+                        font-size: 32px;
+                        margin-right: 30px;
+                        font-family: 'DIN';
+                    }
+                    .active {
+                        background: $yellow-cl;
+                        color: $text-black-cl;
+                    }
+                }
+            }
+            .row {
+                margin-top: 30px;
+                input {
+                    border: 1px solid;
+                    height: 100px;
+                }
+                textarea {
+                    outline: none;
+                    width: 100%;
+                    height: 120px;
+                    padding: 10px;
+                }
+            }
+            .duration {
+                margin: 20px 0;
+                &__date {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    img {
+                        transform: rotate(180deg);
+                    }
+                    .date {
+                        display: flex;
+                        position: relative;
+                        input {
+                            border: 1px solid;
+                        }
+                        img {
+                            position: absolute;
+                            right: 10px;
+                            top: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            input {
+                border : 1px solid;
+            }
+        }
+        .submit {
+            display: flex;
+            margin-top: 50px;
+            p {
+                margin-left: 15px;
+            }
+            a {
+                font-size: 18px;
+                transition: 0.5s;
+            }
+        }
+    }
+
+
+    @include tablet {
+		.col-md-7 {
+            .company-detail , .booking-detail {
+                textarea {
+                    border: 1px solid;
+                }
+            }
+            
+        }
+	}
+	@include mobile {
+        .col-md-3 {
+            display: flex;
+            height: auto;
+            background: none;
+            padding: 0;
+            .studio-det {
+                margin-top: 30px;
+                padding-top: 30px;
+                span {
+                    font-size: 56px;
+                    font-weight: bold;
+                }
+            }
+            .text {
+                color: $black-bg-cl;
+                margin-left: 30px;
+                h2 {
+                    margin: 30px 0 10px;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .col-md-7 {
+            padding: 0;
+            .booking-detail {
+                .duration {
+                    &__date {
+                        display: block;
+                        text-align: center;
+                        .date-img {
+                            margin: 10px 0;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+	@include mobile-xxs {
+        
+    }
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+.pr0 {
+    padding-right: 0;
+}
